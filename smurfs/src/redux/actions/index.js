@@ -1,12 +1,12 @@
 import axios from 'axios';
 
 // make call, get data, get error
-const START_GET = "START_GET";
-const GET_DATA = "GET_DATA";
-const GET_ERROR = "GET_ERROR";
+export const START_GET = "START_GET";
+export const GET_DATA = "GET_DATA";
+export const GET_ERROR = "GET_ERROR";
 
 // thunk call to get data
-const getDate = () => (dispatch) => {
+export const getData = () => (dispatch) => {
     dispatch({type: START_GET});
     axios
         .get('http://localhost:333/smurfs')

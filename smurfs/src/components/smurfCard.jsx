@@ -1,10 +1,10 @@
 import React from 'react';
 
-const SmurfCard = () => {
+const SmurfCard = (props) => {
     return (
         <>
             <div>
-                <h3>name{}</h3>
+                <h3>{props.smurf.name}</h3>
                 <p>age{}</p>
                 <p>height{}</p>
             </div>
