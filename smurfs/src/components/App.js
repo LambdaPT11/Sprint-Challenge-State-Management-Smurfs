@@ -1,7 +1,8 @@
-import React, { useEffect, Component } from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import SmurfCard from "./smurfCard";
-import { getData } from '../redux/actions';
+import AddForm from './addForm';
+import { getData } from '../redux/actions/index';
 import { connect } from 'react-redux';
 
 
@@ -22,7 +23,7 @@ const App = props => {
               <div>Welcome to your state management version of Smurfs!</div>
               <div>Start inside of your `src/index.js` file!</div>
               <div>Have fun!</div>
-
+              <AddForm />
               {props.smurfs.map(smurf => {
               return <SmurfCard key={smurf.id} smurf={smurf} />
         })}

@@ -5,8 +5,8 @@ const SmurfCard = (props) => {
         <>
             <div>
                 <h3>{props.smurf.name}</h3>
-                <p>age{}</p>
-                <p>height{}</p>
+                <p>{props.smurf.age}</p>
+                <p>{props.smurf.height}</p>
             </div>
         </>
     )
